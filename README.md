@@ -140,11 +140,7 @@ Expected output should include:
 
 # 5. Build Unitree SLAM
 
-Download the test routine package from the B2 SDK Development Guide:
-
-:contentReference[oaicite:0]{index=0}
-
-Extract the folder and move `unitree_slam` into:
+Clone this repository into:
 
 ```text
 ~/unitree/
