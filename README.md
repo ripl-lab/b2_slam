@@ -1,8 +1,9 @@
 # B2_SLAM_README.md
 
 ## Overview
+This repository contains files from the Unitree B2 slam example files. It can be downloaded here: https://support.unitree.com/home/en/B2_developer/SLAM%20Example. 
 
-This document outlines the setup process used to configure a development laptop for working with the Unitree B2 SLAM SDK and related repositories.
+This document outlines the setup process used to configure a development laptop for working with the Unitree B2 SLAM SDK and related repositories. 
 
 Tested on:
 
@@ -32,7 +33,7 @@ Only ROS packages (i.e., repositories containing a `package.xml`) should be plac
 ```text
 ~/unitree/
     unitree_sdk2/
-    unitree_slam/
+    b2_slam/
 ```
 
 These repositories are standard C++ projects and are **not** ROS packages.
@@ -151,7 +152,7 @@ Clone this repository into:
 Inside:
 
 ```text
-~/unitree/unitree_slam/CMakeLists.txt
+~/unitree/b2_slam/CMakeLists.txt
 ```
 
 add:
@@ -181,7 +182,7 @@ without manually passing include/linker flags during every build.
 ## Build
 
 ```bash
-cd ~/unitree/unitree_slam
+cd ~/unitree/b2_slam
 
 mkdir -p build
 cd build
@@ -198,7 +199,7 @@ make -j$(nproc)
 To verify successful SLAM compilation:
 
 ```bash
-find ~/unitree/unitree_slam/build -maxdepth 1 -type f -executable
+find ~/unitree/b2_slam/build -maxdepth 1 -type f -executable
 ```
 
 Expected executables include:
@@ -218,7 +219,7 @@ recover_nav
 
 # 7. Notes
 
-- `unitree_slam` is not a ROS package.
+- `b2_slam` is not a ROS package.
 - The repository contains precompiled architecture-specific libraries.
 - The provided `install.sh` script was not used in this setup.
 - SDK2 was installed into:
