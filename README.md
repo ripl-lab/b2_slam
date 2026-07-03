@@ -1,4 +1,21 @@
 # B2_SLAM_README.md
+## Run Demo File
+1. Connect to ethernet / wifi. Check ifconfig for network interface:
+ ```bash
+ ifconfig
+```
+2. Confirm connection to PC2:
+```bash
+ ping 192.168.123.162
+```
+3. Navigate to build directory:
+ ```bash
+ cd b2_slam/build
+```
+4. Run the demo file using the network interface. If connected through ethernet:
+```bash
+ sudo ./demo_b2 enp8s0
+```
 
 ## Overview
 This repository contains files from the Unitree B2 slam example files. It can be downloaded here: https://support.unitree.com/home/en/B2_developer/SLAM%20Example. 
