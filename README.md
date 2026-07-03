@@ -14,7 +14,7 @@
 ```
 4. Run the demo file using the network interface. If connected through ethernet:
 ```bash
- sudo ./demo_b2 enp8s0
+ sudo ./demo_b2 enp0s31f6
 ```
 
 ## Overview

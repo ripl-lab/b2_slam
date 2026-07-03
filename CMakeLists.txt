@@ -80,3 +80,16 @@ add_executable(demo_mid360 unitree_slam_example/demo_mid360.cpp)
 target_link_libraries(demo_mid360 unitree_sdk2)
 
 
+execute_process(
+    COMMAND uname -m
+    OUTPUT_VARIABLE ARCH
+    OUTPUT_STRIP_TRAILING_WHITESPACE
+)
+
+include_directories(
+    ${CMAKE_SOURCE_DIR}/unitree_robotics/include
+)
+
+link_directories(
+    ${CMAKE_SOURCE_DIR}/unitree_robotics/lib/${ARCH}
+)
