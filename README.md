@@ -16,6 +16,8 @@
 ```bash
  sudo ./demo_b2 enx9c69d340226c
 ```
+To start mapping, press the keyboard key: w.
+To end mapping, press the keyboard key: e.
 
 ## Overview
 This repository contains files from the Unitree B2 slam example files. It can be downloaded here: https://support.unitree.com/home/en/B2_developer/SLAM%20Example. 
